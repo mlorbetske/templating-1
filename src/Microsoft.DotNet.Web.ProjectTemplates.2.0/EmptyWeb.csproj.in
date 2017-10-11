@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework Condition="'$(TargetFrameworkOverride)' == ''">netcoreapp2.0</TargetFramework>
+    <TargetFramework Condition="'$(TargetFrameworkOverride)' == ''">${DefaultTargetFramework}</TargetFramework>
     <TargetFramework Condition="'$(TargetFrameworkOverride)' != ''">TargetFrameworkOverride</TargetFramework>
   </PropertyGroup>
 
@@ -10,10 +10,10 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFrameworkOverride)' == ''">
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="$(TemplateDep_Coherence_2_0)" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="${MicrosoftAspNetCoreAllPackageVersion}" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFrameworkOverride)' != ''">
-    <PackageReference Include="Microsoft.AspNetCore" Version="$(TemplateDep_Coherence_2_0)" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="${MicrosoftAspNetCorePackageVersion}" />
   </ItemGroup>
 
 </Project>

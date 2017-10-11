@@ -30,7 +30,7 @@ namespace Templates.Test
             // We don't want any of the host repo's build config interfering with
             // how the test project is built, so disconnect it from the
             // Directory.Build.props/targets context
-            File.WriteAllText(Path.Combine(TemplateOutputDir, "Directory.Build.props"), "<Project />");
+            File.WriteAllText(Path.Combine(TemplateOutputDir, "Directory.Build.props"), "<Project><Import Project=\"../../TemplateTests.props\" /></Project>");
             File.WriteAllText(Path.Combine(TemplateOutputDir, "Directory.Build.targets"), "<Project />");
         }
 
