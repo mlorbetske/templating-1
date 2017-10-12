@@ -2,6 +2,7 @@
 using System.IO;
 using System.Reflection;
 using System.Threading;
+using Microsoft.Extensions.CommandLineUtils;
 using Templates.Test.Helpers;
 using Xunit;
 using Xunit.Abstractions;
@@ -58,7 +59,7 @@ namespace Templates.Test
                 args += $" -lang {language}";
             }
 
-            ProcessEx.Run(Output, TemplateOutputDir, "dotnet", args).WaitForExit(assertSuccess: true);            
+            ProcessEx.Run(Output, TemplateOutputDir, DotNetMuxer.MuxerPathOrDefault(), args).WaitForExit(assertSuccess: true);
         }
 
         protected void RunNpmInstall()

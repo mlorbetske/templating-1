@@ -23,6 +23,7 @@
     <MicrosoftEntityFrameworkCoreSqlServerPackageVersion>2.0.1-rtm-95</MicrosoftEntityFrameworkCoreSqlServerPackageVersion>
     <MicrosoftEntityFrameworkCoreToolsDotNetPackageVersion>2.0.1-rtm-95</MicrosoftEntityFrameworkCoreToolsDotNetPackageVersion>
     <MicrosoftEntityFrameworkCoreToolsPackageVersion>2.0.1-rtm-95</MicrosoftEntityFrameworkCoreToolsPackageVersion>
+    <MicrosoftExtensionsCommandLineUtilsSourcesPackageVersion>2.0.0</MicrosoftExtensionsCommandLineUtilsSourcesPackageVersion>
     <MicrosoftExtensionsSecretManagerToolsPackageVersion>2.0.1-rtm-95</MicrosoftExtensionsSecretManagerToolsPackageVersion>
     <MicrosoftNETTestSdkPackageVersion>15.3.0</MicrosoftNETTestSdkPackageVersion>
     <MicrosoftVisualStudioWebBrowserLinkPackageVersion>2.0.1-rtm-95</MicrosoftVisualStudioWebBrowserLinkPackageVersion>
