@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <ExcludeSolutions Include="$(RepositoryRoot)Templating.Testing.sln" />
+  </ItemGroup>
+</Project>
